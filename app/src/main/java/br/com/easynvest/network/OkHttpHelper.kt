@@ -9,7 +9,7 @@ class OkHttpHelper {
 
         fun getOkHttpInstance(): OkHttpClient.Builder {
             if (client == null) {
-                client = OkHttpClient.Builder()
+                client =  OkHttpClient.Builder()
             }
 
             return client!!
