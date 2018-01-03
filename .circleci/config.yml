@@ -20,7 +20,7 @@ jobs:
       - run:
           name: Run Tests
           command: ./gradlew lint test
-      test:
+      - test:
         override:
           - ./gradlew assembleRelease
           - cp -r renda-fixa-simulator-circleci/build/outputs $CIRCLE_ARTIFACTS
