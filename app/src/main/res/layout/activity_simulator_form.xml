@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:scrollbars="none"
+    tools:context="br.com.easynvest.view.impl.SimulatorFormActivity">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/container_margin_top"
+        android:padding="@dimen/layout_padding">
+
+        <TextView
+            android:id="@+id/TVInvestmentAmount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/amount_margin_top"
+            android:text="@string/investment_amount_label"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent" />
+
+        <EditText
+            android:id="@+id/ETInvestmentAmount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/input_margin_top"
+            android:gravity="center"
+            android:hint="@string/investment_amount_hint"
+            android:inputType="number"
+            android:maxLength="20"
+            android:maxLines="1"
+            android:textSize="35sp"
+            app:layout_constraintTop_toBottomOf="@+id/TVInvestmentAmount" />
+
+        <TextView
+            android:id="@+id/TVMaturityDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/label_margin_top"
+            android:text="@string/maturity_date_label"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ETInvestmentAmount" />
+
+        <EditText
+            android:id="@+id/ETMaturityDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/input_margin_top"
+            android:gravity="center"
+            android:hint="@string/maturity_date_hint"
+            android:inputType="date"
+            android:maxLength="10"
+            android:maxLines="1"
+            android:textSize="35sp"
+            app:layout_constraintTop_toBottomOf="@+id/TVMaturityDate" />
+
+        <TextView
+            android:id="@+id/TVCDI"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/label_margin_top"
+            android:text="@string/cdi_label"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ETMaturityDate" />
+
+        <EditText
+            android:id="@+id/ETCDI"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/input_margin_top"
+            android:gravity="center"
+            android:hint="@string/cdi_hint"
+            android:inputType="number"
+            android:maxLength="4"
+            android:textSize="35sp"
+            app:layout_constraintTop_toBottomOf="@+id/TVCDI"
+
+            />
+
+        <Button
+            android:id="@+id/BTSimulate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/simulate_bt_margin_end"
+            android:layout_marginLeft="@dimen/simulate_bt_margin_start"
+            android:layout_marginRight="@dimen/simulate_bt_margin_end"
+            android:layout_marginStart="@dimen/simulate_bt_margin_start"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/simulate_bt"
+            android:enabled="false"
+            android:text="@string/simulate_bt_label"
+            android:textColor="@android:color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ETCDI"
+
+            />
+
+        <ProgressBar
+            android:id="@+id/SimulationLoading"
+            style="@style/ProgressBarStyle"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>
+
+

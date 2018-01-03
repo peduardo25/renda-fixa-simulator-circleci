@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="br.com.easynvest.view.impl.SimulatorResultActivity">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/result_container_padding">
+
+
+        <include android:id="@+id/header"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            layout="@layout/investment_result_header"/>
+
+
+        <include
+            android:id="@+id/profit"
+            layout="@layout/investment_result_profit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/result_header_margin_top"
+            app:layout_constraintTop_toBottomOf="@+id/header"/>
+
+
+        <include android:id="@+id/info"
+            layout="@layout/investment_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/result_info_margin_top"
+            app:layout_constraintTop_toBottomOf="@+id/profit"/>
+
+
+        <Button
+            android:id="@+id/Simulate"
+            android:text="@string/bt_simulate_again_label"
+            android:textColor="@android:color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/simulate_bt_margin_top"
+            android:background="@drawable/simulate_bt_enabled"
+            app:layout_constraintTop_toBottomOf="@+id/info"
+            />
+
+
+
+    </android.support.constraint.ConstraintLayout>
+
+</ScrollView>

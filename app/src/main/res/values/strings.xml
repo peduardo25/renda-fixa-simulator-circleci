@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">Easynvest</string>
+    <string name="investment_amount_label">Quanto você gostaria de aplicar? *</string>
+    <string name="investment_amount_hint"><font size="35">R$</font></string>
+    <string name="maturity_date_label">Qual a data de vencimento do investimento? *</string>
+    <string name="maturity_date_hint"><font size="35">dia/mês/ano</font></string>
+    <string name="cdi_label">Qual o percentual do CDI do investimento? *</string>
+    <string name="cdi_hint"><font size="35">100%</font></string>
+    <string name="simulate_bt_label">Simular</string>
+    <string name="required_msg">Campo obrigatório</string>
+    <string name="invalid_date_msg">Data Inválida</string>
+    <string name="request_error">Erro na requisição, tente novamente!</string>
+    <string name="gross_amount_profit">Rendimento total de </string>
+    <string name="ir_value">%1$s(%2$s%%)</string>
+    <string name="monthly_gross_rate">%1$s%%</string>
+    <string name="rate">%1$.0f%%</string>
+    <string name="annual_gross_rate">%1$.2f%%</string>
+    <string name="rate_profit">%1$s%%</string>
+    <string name="maturity_total_days">%1$.0f</string>
+    <string name="simulation_result_label">Resultado da simulação</string>
+    <string name="bt_simulate_again_label">Simular novamente</string>
+    <string name="maturity_date_info_label">Data de resgate</string>
+    <string name="maturity_total_days_label">Dias corridos</string>
+    <string name="monthly_gross_profit_label">Rendimento mensal</string>
+    <string name="rate_label">Percentual do CDI do investimento</string>
+    <string name="annual_gross_profit_label">Rentabilidade anual</string>
+    <string name="period_rate_profit_label">Rentabilidade no perído</string>
+    <string name="invested_amount_label">Valor aplicado inicialmente</string>
+    <string name="rate_profit_label">Valor bruto do investimento</string>
+    <string name="investment_profit_label">Valor do rendimento</string>
+    <string name="IR_label">IR sobre o investimento</string>
+    <string name="net_amount_label">Valor líquido do investimento</string>
+</resources>

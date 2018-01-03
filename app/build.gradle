@@ -1,0 +1,84 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
+
+android {
+    compileSdkVersion 26
+    defaultConfig {
+        applicationId "br.com.easynvest"
+        minSdkVersion 16
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        buildConfigField "String", "BASEURL", '"https://api-simulator-calc.easynvest.com.br"'
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jre7:$kotlin_version"
+    implementation 'com.android.support:appcompat-v7:26.1.0'
+    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
+
+    implementation 'com.android.support:design:26.1.0'
+    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
+    testImplementation 'junit:junit:4.12'
+
+    //Dependency Injector
+    implementation 'com.google.dagger:dagger:2.9'
+    kapt 'com.google.dagger:dagger-compiler:2.9'
+    provided 'org.glassfish:javax.annotation:10.0-b28'
+
+    //Retrofit
+    implementation 'com.squareup.retrofit2:retrofit:2.1.0'
+
+    //OkHttp
+    implementation 'com.squareup.okhttp3:okhttp:3.7.0'
+    implementation 'com.squareup.okio:okio:1.12.0'
+    implementation 'com.squareup.okhttp3:logging-interceptor:3.6.0'
+
+    //Gson
+    implementation 'com.google.code.gson:gson:2.8.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.1.0'
+
+    //Reactive
+    implementation 'io.reactivex:rxjava:1.2.10'
+    implementation 'io.reactivex:rxandroid:1.2.1'
+    implementation 'com.squareup.retrofit2:adapter-rxjava:2.1.0'
+
+    //Unit Test
+    implementation 'org.mockito:mockito-all:2.0.2-beta'
+
+    //Robolectric
+    testImplementation "org.robolectric:robolectric:3.3.2"
+
+    //Text mask
+    implementation 'br.com.jansenfelipe:androidmask:1.0.1'
+
+    androidTestImplementation('com.android.support.test:runner:1.0.1') {
+        exclude module: 'support-annotations'
+    }
+
+    //Instrumentation Test
+    androidTestImplementation('com.android.support.test.espresso:espresso-contrib:3.0.1') {
+        exclude module: 'support-annotations'
+        exclude module: 'support-v4'
+        exclude module: 'appcompat-v7'
+        exclude module: 'design'
+        exclude module: 'recyclerview-v7'
+    }
+
+    androidTestImplementation('com.android.support.test.espresso:espresso-idling-resource:3.0.1') {
+        exclude module: 'support-annotations'
+    }
+
+    androidTestImplementation 'com.jakewharton.espresso:okhttp3-idling-resource:1.0.0'
+}

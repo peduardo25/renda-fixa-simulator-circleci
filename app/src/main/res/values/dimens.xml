@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="simulate_bt_radius">50dp</dimen>
+    <dimen name="amount_margin_top">30dp</dimen>
+    <dimen name="container_margin_top">30dp</dimen>
+    <dimen name="input_margin_top">10dp</dimen>
+    <dimen name="label_margin_top">60dp</dimen>
+    <dimen name="simulate_bt_margin_start">10dp</dimen>
+    <dimen name="simulate_bt_margin_end">10dp</dimen>
+    <dimen name="layout_padding">20dp</dimen>
+
+    <!-- Progress indicator -->
+    <dimen name="progress_indicator_size">80dp</dimen>
+    <dimen name="simulate_bt_margin_top">50dp</dimen>
+    <dimen name="result_container_padding">20dp</dimen>
+    <dimen name="result_header_margin_top">50dp</dimen>
+    <dimen name="result_info_margin_top">50dp</dimen>
+    <dimen name="result_value_margin">10dp</dimen>
+    <dimen name="investment_profit_margin_top">8dp</dimen>
+    <dimen name="investment_indo_margin_top">8dp</dimen>
+</resources>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/MaturityDateLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/maturity_date_info_label"
+        />
+
+    <TextView
+        android:id="@+id/MaturityDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/MaturityTotalDaysLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/maturity_total_days_label"
+        android:layout_marginTop="@dimen/investment_indo_margin_top"
+        app:layout_constraintTop_toBottomOf="@+id/MaturityDateLabel"
+        />
+
+    <TextView
+        android:id="@+id/MaturityTotalDays"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/investment_indo_margin_top"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/MaturityDate"
+        />
+
+    <TextView
+        android:id="@+id/MonthlyGrossRateProfitLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/monthly_gross_profit_label"
+        android:layout_marginTop="@dimen/investment_indo_margin_top"
+        app:layout_constraintTop_toBottomOf="@+id/MaturityTotalDaysLabel"
+        />
+
+    <TextView
+        android:id="@+id/MonthlyGrossRateProfit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/investment_indo_margin_top"
+        app:layout_constraintTop_toBottomOf="@+id/MaturityTotalDays"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <TextView
+        android:id="@+id/RateLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/rate_label"
+        android:layout_marginTop="@dimen/investment_indo_margin_top"
+        app:layout_constraintTop_toBottomOf="@+id/MonthlyGrossRateProfitLabel"
+        />
+
+    <TextView
+        android:id="@+id/Rate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/investment_indo_margin_top"
+        app:layout_constraintTop_toBottomOf="@+id/MonthlyGrossRateProfit"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <TextView
+        android:id="@+id/AnnualGrossRateProfitLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/annual_gross_profit_label"
+        android:layout_marginTop="@dimen/investment_indo_margin_top"
+        app:layout_constraintTop_toBottomOf="@+id/RateLabel"
+        />
+
+    <TextView
+        android:id="@+id/AnnualGrossRateProfit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/investment_indo_margin_top"
+        app:layout_constraintTop_toBottomOf="@+id/Rate"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <TextView
+        android:id="@+id/PeriodRateProfitLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/period_rate_profit_label"
+        android:layout_marginTop="@dimen/investment_indo_margin_top"
+        app:layout_constraintTop_toBottomOf="@+id/AnnualGrossRateProfitLabel"
+        />
+
+    <TextView
+        android:id="@+id/PeriodRateProfit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/investment_indo_margin_top"
+        app:layout_constraintTop_toBottomOf="@+id/AnnualGrossRateProfit"
+        app:layout_constraintRight_toRightOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

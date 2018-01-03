@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#2DC2AF</color>
+    <color name="colorPrimaryDark">#2DC2AF</color>
+    <color name="colorAccent">@android:color/darker_gray</color>
+    <color name="simulate_bt_color">#C3CAC9</color>
+    <color name="simulate_result_bt">#2DC2AF</color>
+</resources>
