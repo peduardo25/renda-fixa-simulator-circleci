@@ -15,7 +15,7 @@ class ExtensionTest {
     @Test
     fun shouldUnmaskCurrency() {
         val value = "RS 1.000,00"
-        Assert.assertEquals("100000", value.unmask())
+        org.junit.Assert.assertEquals("100000", value.unmask())
     }
 
     @Test
